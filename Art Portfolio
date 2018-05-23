@@ -1,0 +1,50 @@
+{
+  "htmlFiles": [
+    {
+      "fileId": "1heR62PKDXVVVQvZ1fq6LF1xp8Oq4S-eM",
+      "contentType": "text/html",
+      "name": "index.html",
+      "path": "1rBc0sFhgPlR-6bL8qUvFIR0-Y_1Cn1fK"
+    },
+    {
+      "fileId": "1eA-1x0EDfyAJ-HnfvjFRYp1P9m4ORe_X",
+      "contentType": "text/html",
+      "name": "portfolio.html",
+      "path": "1rBc0sFhgPlR-6bL8qUvFIR0-Y_1Cn1fK/"
+    },
+    {
+      "fileId": "1YbaLn3FmKsozHYOps52I1Zi6tK0Y06oF",
+      "contentType": "text/html",
+      "name": "pieces.html",
+      "path": "1rBc0sFhgPlR-6bL8qUvFIR0-Y_1Cn1fK/"
+    },
+    {
+      "fileId": "1jyYqFMO3OMOLmDVJzQkv2HXbP6lgkfZf",
+      "contentType": "text/html",
+      "name": "photos.html",
+      "path": "1rBc0sFhgPlR-6bL8qUvFIR0-Y_1Cn1fK/"
+    },
+    {
+      "fileId": "1v4qa3FbP1UGDFMMwgfjjVeZaM4neu2-4",
+      "contentType": "text/html",
+      "name": "inspiration.html",
+      "path": "1rBc0sFhgPlR-6bL8qUvFIR0-Y_1Cn1fK/"
+    }
+  ],
+  "cssFiles": [
+    {
+      "fileId": "1h_OWGMQI_gO_Zs4YXODTXjSIvzU5197s",
+      "contentType": "text/css",
+      "name": "style.css",
+      "path": "1rBc0sFhgPlR-6bL8qUvFIR0-Y_1Cn1fK"
+    }
+  ],
+  "javascriptFiles": [
+    {
+      "fileId": "1LeyGhNDSEo9dl3hbxjXVp_rgHM7u_M5x",
+      "contentType": "text/javascript",
+      "name": "script.js",
+      "path": "1rBc0sFhgPlR-6bL8qUvFIR0-Y_1Cn1fK"
+    }
+  ]
+}

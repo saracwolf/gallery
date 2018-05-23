@@ -1,0 +1,345 @@
+@font-face {
+    font-family: "Playlist Script";
+    src: url("Playlist Script.otf");
+}
+
+img {
+    max-width:100%;
+}
+
+/*------------------------------------HEADER----------------------------------------------*/
+
+body {
+  font-family: "Playfair Display";
+  background-color: #65837B;
+  margin:0;
+    }
+    
+header {
+    grid-area:header;
+    background:#65837B;
+    padding:5px;
+    text-align:center;
+    }
+
+#logo {
+    height:120px;
+    margin:0;
+}
+
+/*----------------------------------------NAV----------------------------------------------*/
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    grid-area:nav;
+    top:0;
+    z-index:999;
+    background:#65837B;
+    padding:5px;
+    text-align:center;
+}    
+
+.navtext {
+    font-family:"Playlist Script";
+    color:white;
+    font-size: 5vw; /*Sara, I changed this from 35px as an experiment, if it's too large in the deskotp layout you could just change it in that media query to 3vw or something similiar*/
+}
+
+
+#menutext {
+    font-family:"Playlist Script";
+    color:white;
+    letter-spacing:3px;
+}
+
+.navtext:hover {
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+}
+
+/*This stuff is to make my navigation go horizontal on full screen*/
+#first {
+    grid-area:first;
+    margin-left:5px;
+}
+
+#second {
+    grid-area:second;
+}
+
+#third {
+    grid-area:third;
+}
+
+#fourth {
+    grid-area:fourth;
+}
+
+#fifth {
+    grid-area:fifth;
+}
+#navwrapper {
+    display:grid;
+    grid-gap:.1em;
+    grid-template-areas:
+    "first"
+    "second"
+    "third"
+    "fourth"
+    "fifth"; /*this is to make each menu option appear in one row*/
+    }
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+/*--------------------------------------MAIN----------------------------------------------*/
+main {
+    grid-area:main;
+    background:white;
+    padding:5px;
+    }
+
+h1 {
+     font-size:15px;
+     color:white;
+     font-family:"Playfair Display";
+     margin: 0;
+}
+
+main h2 {
+    text-align:center;
+    color:gray;
+    letter-spacing:5px;
+    font-style:italic;
+    margin:1%;
+   
+}
+main p {
+    color:black;
+    padding:1% 2%;
+    font-size:1em;
+    font-family:"Playfair display";
+    font-weight:bold;
+}
+
+/*-------------FORM------------------*/
+form {
+    background-color:gray;
+    width:90%;
+    margin:10px auto;
+    color:white;
+    padding:10px;
+    align:auto;
+    
+}
+
+#button {
+    color:white;
+    background-color:gray;
+    cursor:pointer;
+}
+/*-----------------------------------ASIDE--------------------------------------*/
+aside {
+    background:rgba(0,0,0,.2);
+    color: white;
+    grid-area:aside;
+    }
+    
+    @keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+65% { left: -200%; }
+70% { left: -300%; }
+85% { left: -300%; }
+100% { left: -400%; }
+}
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%;}
+div#slider figure { 
+  position: relative;
+  z-index:1;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 25s slidy infinite; 
+}
+
+    
+/*------------------------------------FOOTER----------------------------------------------*/
+
+footer {
+    grid-area:footer;
+    background:rgba(0,0,0,.2);
+    padding:5px;
+    text-align:center;
+    }
+
+footer p {
+     font-size:1em;
+     color:white;
+     margin:0;
+}
+/*------------------------------------GALLERY----------------------------------------------*/
+.portfolio {
+  text-align:center;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  
+  z-index:1;
+}
+
+.portfolio > a > div {
+  padding: 5px;
+}
+
+.portfolio > a > div > img {
+  
+  transition: .1s transform;
+  transform: translateZ(1); /* hack */
+}
+.portfolio > a > div:hover {
+   z-index:1;
+}
+
+.portfolio > a > div:hover > img {
+  transform: scale(2,2);
+  transition: .3s transform;
+
+}
+
+.cf:before, .cf:after {
+  line-height: 0;
+  content:" ";
+  display:block;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.none {
+  display: none;
+}
+.clear {
+clear:both;
+}
+
+
+
+/*------------------------------------CSS GRID---------------------------------------------*/
+
+.container1 { /*for index.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "aside"
+    "main"
+    "footer";
+    }
+    .container2 { /*for portfolio.html*/
+  display: grid;
+  grid-template-columns:55px 1fr 55px;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    ". main ."
+    "footer footer footer";
+    }
+
+.toggleNav {
+    display:grid; 
+    text-align:center;
+    font-size:1.5em;
+    font-weight:bold;
+    padding:10px;
+    }
+
+#flex-nav ul {
+    display: none;
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+ 
+#flex-nav ul.open { /*.open is the class that gets toggled when clicked (with help from the jQuery code)*/
+    display:grid;
+    }
+    
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+    }
+    
+@media only screen and (min-width: 480px)  {
+
+#navwrapper {
+    display:grid;
+    justify-content:space-around;
+    grid-template-areas:
+    "first second third fourth fifth"; /*this is to make each menu option appear in one row*/
+    }   
+/* Below will change from hamburger menu to side navigation*/
+  
+.toggleNav {
+    display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
+  }
+  
+#flex-nav ul {
+    display:grid;
+    text-align:left;
+  }
+
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+    }  
+}  
+
+@media only screen and (min-width: 960px)  {
+    .container1 { /*for index.html*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+    }
+    .container2 { /*for portfolio.html*/
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+    }
+
+}
