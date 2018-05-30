@@ -300,7 +300,7 @@ clear:both;
     grid-template-areas:
     "first second third fourth fifth"; /*this is to make each menu option appear in one row*/
     }   
- /* Below will change from hamburger menu to standard navigation/
+ /* Below will change from hamburger menu to standard navigation*/
   
 .toggleNav {
     display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
