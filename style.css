@@ -242,7 +242,6 @@ clear:both;
 
 
 /*------------------------------------CSS GRID---------------------------------------------*/
-
 .container1 { /*for index.html*/
   display: grid;
   grid-template-columns:100%;
@@ -275,7 +274,7 @@ clear:both;
 #flex-nav ul {
     display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
     text-align:center;
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     }
@@ -287,8 +286,9 @@ clear:both;
 #flex-nav li {
     padding-left:10px;
     padding-top:10px;
-    }
     
+    
+}
 @media only screen and (min-width: 480px)  {
 
 #navwrapper {
@@ -307,7 +307,7 @@ clear:both;
   }
 
 #flex-nav li {
-    
+    list-style-type:none;
     padding-top:10px;
     }
 }  
@@ -324,16 +324,6 @@ clear:both;
     "main aside"
     "footer footer";
     }
-    .container2 { /*for portfolio.html*/
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap:.5em;
-  margin:1%;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
-    }
+
 
 }
