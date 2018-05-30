@@ -267,16 +267,13 @@ clear:both;
     "footer footer footer";
     }
 
+/*This stuff is for the hamburger menu*/
 .toggleNav {
-    display:grid; 
-    text-align:center;
-    font-size:1.5em;
-    font-weight:bold;
-    padding:10px;
+    display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
     }
 
 #flex-nav ul {
-    display: none;
+    display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
     text-align:center;
     list-style: none;
     margin: 0;
@@ -296,25 +293,23 @@ clear:both;
 
 #navwrapper {
     display:grid;
-    justify-content:space-around;
     grid-template-areas:
-    "first second third fourth fifth"; /*this is to make each menu option appear in one row*/
-    }   
- /* Below will change from hamburger menu to standard navigation*/
-  
+    "first second third fourth fifth";
+    }
+    
 .toggleNav {
     display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
   }
   
 #flex-nav ul {
     display:grid;
-    text-align:left;
+    text-align:center;
   }
 
 #flex-nav li {
-    padding-left:10px;
+    
     padding-top:10px;
-    } 
+    }
 }  
 
 @media only screen and (min-width: 960px)  {
